@@ -139,7 +139,7 @@ void Deck::insert(vector<Card> &cardlist, Card card) {
     int j = 0;
     // we search trough the vector until we find a card with higher rank than the card we want to insert 
     for (; j < cardlist.size(); j++) {
-        if (cardlist[j].rank > card.rank) {
+        if (cardlist[j] > card) {
             break;
         }
     }
